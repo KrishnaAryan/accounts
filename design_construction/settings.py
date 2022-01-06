@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'payment_tracker',
     'project_tracker',
     'chat',
-    'widget_tweaks',
+    #'widget_tweaks',
     
 ]
 
