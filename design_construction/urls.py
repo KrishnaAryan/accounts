@@ -29,6 +29,7 @@ urlpatterns = [
     path('insight/',include('insight.urls')),
     path('project_tracker/',include('project_tracker.urls')),
     path('payment_tracker/',include('payment_tracker.urls')),
+    path('chat/',include('chat.urls')),
     re_path(r'^media/(?P<path>.*)$',serve,{'document_root':settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$',serve,{'document_root':settings.STATIC_ROOT}),
 
