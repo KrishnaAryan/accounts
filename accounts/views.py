@@ -117,8 +117,10 @@ class LogOutView(APIView):
     def post(self,request):
         try:
             logout(request)
+            return Response({'message':'logout'},status=status.HTTP_200_OK)
         except Exception as e:
             print(e)
+            return Response({'message':'something went to wrong'},status=status.HTTP_400_BAD_REQUEST)
 
 """ This API is used to change password """
 
